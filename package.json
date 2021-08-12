@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "nodemon": "nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "coba":"tsc-watch --onSuccess \"node ./bin/www \""
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +17,13 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@types/cookie-parser": "^1.4.2",
+    "@types/http-errors": "^1.8.1",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.6.0",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.5"
   }
 }
